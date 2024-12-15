@@ -1,0 +1,42 @@
+.pokeball-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  
+  .pokeball {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(red 50%, white 50%);
+    border-radius: 50%;
+    position: relative;
+    animation: rotatePokeball 2s infinite linear;
+  }
+  
+  .pokeball::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes rotatePokeball {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  
+
+  
+  

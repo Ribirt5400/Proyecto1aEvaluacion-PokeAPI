@@ -1,0 +1,117 @@
+body {
+    background: linear-gradient(135deg, #FFCB05, #3B4CCA);
+    font-family: 'Press Start 2P', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .single-pokemon-page {
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2,
+  h4 {
+    text-align: center;
+    color: #FF3E3E;
+    text-shadow: 2px 2px 0 #FFD700;
+  }
+  
+  .pokemon-images img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #FF3E3E;
+    border-radius: 10px;
+  }
+  
+  .list-group-item {
+    background-color: #FFF5CC;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar {
+    background: linear-gradient(90deg, #FF3E3E, #FFD700);
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  .pokemon-line h2 {
+    margin-top: 2rem;
+    color: #3B4CCA;
+    text-shadow: 1px 1px 0 #FFCB05;
+  }
+  
+  .pokemon-line img {
+    max-width: 80px;
+    border: 2px solid #3B4CCA;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  
+  .custom-button {
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #FFD700;
+    color: #3B4CCA;
+    border: 3px solid #FF3E3E;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #FF3E3E;
+    color: white;
+  }
+  
+  .splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .splide__arrow {
+    background-color: #FFD700;
+    border: 2px solid #FF3E3E;
+    color: #3B4CCA;
+    border-radius: 50%;
+  }
+  
+  .splide__arrow:hover {
+    background-color: #FF3E3E;
+    color: white;
+  }
+  
+  .splide__pagination__page {
+    background-color: #FFD700;
+    border: 1px solid #FF3E3E;
+  }
+  
+  .splide__pagination__page.is-active {
+    background-color: #FF3E3E;
+  }
+  
+  .evolution-item {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .evolution-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%) rotate(45deg);
+    background: linear-gradient(135deg, #FF3E3E, #FFD700);
+    clip-path: polygon(0 0, 100% 0, 50% 50%);
+  }
+  
+  .evolution-item:last-child::after {
+    display: none;
+  }
